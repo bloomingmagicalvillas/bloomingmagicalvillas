@@ -358,6 +358,9 @@ img {
 .showcase-gallery div a img {
   display: block;
   border-radius: 4px;
+  width: 100%;
+  aspect-ratio: 1024 / 734;
+  object-fit: cover;
 }
 /* line 312, ../sass/screen.scss */
 .showcase-gallery div span {
