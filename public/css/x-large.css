@@ -1,0 +1,153 @@
+/* Fonts */
+/* Colors */
+/* Brand colors */
+/* Body color */
+/* Text color */
+/* Header colors */
+/* Background overlay colors */
+/* Banners */
+/* Action colors */
+/* Interaction colors */
+/* Footer colors */
+/* Grey colors */
+/* Backgrounds */
+/* CSS full backgrounds */
+/* line 3, ../sass/x-large.scss */
+body {
+  background: url(../images/backgrounds/header-background.gif) no-repeat top left;
+}
+/* line 5, ../sass/x-large.scss */
+body #header-navigation {
+  background: transparent;
+}
+
+/* Page specific */
+/* line 11, ../sass/x-large.scss */
+.thankyou {
+  background: none;
+}
+/* line 13, ../sass/x-large.scss */
+.thankyou #header-navigation {
+  background: #27ade2;
+}
+
+/* Lets begin */
+@media screen and (min-width: 2200px) {
+  /* line 20, ../sass/x-large.scss */
+  body {
+    background: none;
+  }
+
+  /* line 23, ../sass/x-large.scss */
+  #lets-begin {
+    background: #27ade2;
+  }
+}
+/* Header navigation */
+/* line 34, ../sass/x-large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation ul li.logo {
+  margin: 0 30px 0 60px;
+}
+/* line 37, ../sass/x-large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation ul li a {
+  margin: 0 0 0 30px;
+}
+/* line 42, ../sass/x-large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation a.header-logo {
+  display: none;
+}
+/* line 44, ../sass/x-large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation a.header-logo img {
+  max-width: 150px;
+  display: block;
+}
+/* line 48, ../sass/x-large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation a.header-logo.navigation {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 58, ../sass/x-large.scss */
+#page-header .inner {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+/* line 62, ../sass/x-large.scss */
+#page-header .banner {
+  border-left: 3px solid #FFFFFF;
+  border-top: 3px solid #FFFFFF;
+  border-right: 3px solid #FFFFFF;
+}
+
+/* Page introduction */
+/* line 71, ../sass/x-large.scss */
+#page-introduction .inner {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+/* line 75, ../sass/x-large.scss */
+#page-introduction .banner {
+  border: 3px solid #FFFFFF;
+  align-items: stretch;
+}
+/* line 78, ../sass/x-large.scss */
+#page-introduction .banner .flex-container {
+  width: 739px;
+  min-height: 527px;
+}
+/* line 82, ../sass/x-large.scss */
+#page-introduction .banner .intro {
+  width: 416px;
+}
+/* line 85, ../sass/x-large.scss */
+#page-introduction .banner .intro-inner {
+  padding: 0;
+}
+/* line 88, ../sass/x-large.scss */
+#page-introduction .banner .intro-image {
+  display: block;
+  border-bottom: 3px solid #FFFFFF;
+}
+/* line 92, ../sass/x-large.scss */
+#page-introduction .banner .intro-text {
+  padding: 44px 44px 0 44px;
+}
+
+/* Indented */
+/* line 101, ../sass/x-large.scss */
+.indented .backing .indent {
+  max-width: 573px;
+}
+
+/* Checklist */
+/* line 110, ../sass/x-large.scss */
+ul.checklist.ticks li {
+  width: 47%;
+}
+
+/* Map */
+/* line 117, ../sass/x-large.scss */
+#map {
+  height: 500px;
+}
+
+/* About page */
+/* line 123, ../sass/x-large.scss */
+#villa-details .golden {
+  min-height: 576px;
+}
+
+/* Rates page */
+/* line 130, ../sass/x-large.scss */
+#villa-rates .golden {
+  min-height: 808px;
+}
+
+/* Lightcase */
+/* line 138, ../sass/x-large.scss */
+#lightcase-case #lightcase-info #lightcase-title, #lightcase-case #lightcase-info #lightcase-sequenceInfo, #lightcase-case #lightcase-info #lightcase-caption {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}

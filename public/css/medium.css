@@ -1,0 +1,171 @@
+/* Fonts */
+/* Colors */
+/* Brand colors */
+/* Body color */
+/* Text color */
+/* Header colors */
+/* Background overlay colors */
+/* Banners */
+/* Action colors */
+/* Interaction colors */
+/* Footer colors */
+/* Grey colors */
+/* Backgrounds */
+/* CSS full backgrounds */
+/* Reviews */
+/* line 5, ../sass/medium.scss */
+#reviews .container, #contact .container {
+  padding: 100px 0;
+}
+
+/* line 9, ../sass/medium.scss */
+#gallery, #reviews, #location, #contact {
+  text-align: center;
+}
+/* line 11, ../sass/medium.scss */
+#gallery h2, #reviews h2, #location h2, #contact h2 {
+  text-align: center;
+}
+
+/* line 18, ../sass/medium.scss */
+#page-header .banner .banner-content {
+  float: right;
+  width: 50%;
+  padding: 90px 50px;
+}
+
+/* Showcase gallery */
+/* line 28, ../sass/medium.scss */
+.showcase-gallery div {
+  box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.05);
+  width: 49%;
+  display: inline-block;
+  margin-right: -4px;
+  margin-bottom: 2%;
+  vertical-align: middle;
+  margin-left: 2%;
+  overflow: hidden;
+}
+/* line 37, ../sass/medium.scss */
+.showcase-gallery div:last-of-type {
+  margin-bottom: 2%;
+}
+/* line 40, ../sass/medium.scss */
+.showcase-gallery div.text {
+  margin-bottom: 0;
+  box-shadow: none;
+}
+/* line 44, ../sass/medium.scss */
+.showcase-gallery div:nth-child(2n+1) {
+  margin-left: 0;
+}
+/* line 47, ../sass/medium.scss */
+.showcase-gallery div a {
+  display: block;
+}
+
+/* Boxed */
+/* line 54, ../sass/medium.scss */
+.boxed {
+  padding: 50px;
+  box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+/* Indented */
+/* line 62, ../sass/medium.scss */
+.indented .inner {
+  padding-right: 0;
+  padding-left: 0;
+}
+/* line 67, ../sass/medium.scss */
+.indented .backing img {
+  margin-top: 0;
+  max-width: 746px;
+  box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.05);
+}
+/* line 72, ../sass/medium.scss */
+.indented .backing .indent {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 10px 60px 0 rgba(0, 0, 0, 0.05);
+  width: 60%;
+  max-width: 423px;
+  padding: 50px;
+}
+/* line 85, ../sass/medium.scss */
+.indented.right-indent .backing img {
+  border-radius: 0 4px 4px 0;
+}
+/* line 89, ../sass/medium.scss */
+.indented.right-indent .indent {
+  right: 0;
+  margin-bottom: 0;
+  border-radius: 4px 0 0 4px;
+}
+/* line 96, ../sass/medium.scss */
+.indented.left-indent .backing {
+  text-align: right;
+}
+/* line 98, ../sass/medium.scss */
+.indented.left-indent .backing img {
+  border-radius: 4px 0 0 4px;
+  margin-top: 0;
+}
+/* line 103, ../sass/medium.scss */
+.indented.left-indent .indent {
+  text-align: left;
+  left: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Checklist */
+/* line 114, ../sass/medium.scss */
+ul.checklist.ticks li {
+  display: inline-block;
+  width: 50%;
+  margin-right: -4px;
+}
+
+/* Rates form */
+/* line 124, ../sass/medium.scss */
+form#bookings .column {
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+  width: 48%;
+}
+/* line 129, ../sass/medium.scss */
+form#bookings .column.even {
+  margin-left: 4%;
+}
+
+/* Highlighted sections */
+/* line 137, ../sass/medium.scss */
+.highlighted .container {
+  padding: 35px 0 35px;
+}
+
+/* Location */
+/* Map */
+/* line 145, ../sass/medium.scss */
+#map {
+  height: 500px;
+}
+
+/* Contact page */
+/* line 152, ../sass/medium.scss */
+.contact-page .featured-images .left-image, .contact-page .featured-images .right-image {
+  display: block;
+  width: 50%;
+}
+/* line 156, ../sass/medium.scss */
+.contact-page .featured-images .left-image {
+  float: left;
+}
+/* line 159, ../sass/medium.scss */
+.contact-page .featured-images .right-image {
+  float: right;
+}

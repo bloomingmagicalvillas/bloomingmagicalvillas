@@ -1,0 +1,103 @@
+---
+import ContactSection from '../components/ContactSection.astro';
+import LocationSection from '../components/LocationSection.astro';
+import PoolArea from '../components/PoolArea.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import ThemedRooms from '../components/ThemedRooms.astro';
+import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout
+	title="Orlando accommodation | Blooming Magical Villas"
+	description="Meet the owners and explore the amenities, pool, themed bedrooms and location of Blooming Magical Villas in Kissimmee, Orlando."
+	pageClass="about-page"
+>
+	<div id="lets-begin">
+		<div class="begin-container">
+			<SiteHeader />
+			<header id="page-header">
+				<div class="page-header-container"><div class="inner"><div class="banner clearfix"><div class="banner-content">
+					<h1>Accommodation in Orlando</h1>
+					<p>The villa has 6 bedrooms and sleeps up to 13 people. It is located at Oak Island Cove in Kissimmee, Orlando, only 10 minutes from Disney World's theme parks.</p>
+				</div></div></div></div>
+			</header>
+		</div>
+	</div>
+	<div class="page-body">
+		<div class="page-container">
+			<section id="about" class="clearfix highlighted">
+				<div class="container"><div class="inner">
+					<div class="left-container golden">
+						<h2>We're Blooming Magical Villas</h2>
+						<p><strong>A warm welcome from Scott and Stephanie</strong></p>
+						<p>Ever since visiting Orlando as a young family during the early 90s, it has been our dream to have a vacation home in Florida. In 2015 that dream came true and, after lots of hard work, our newly refurbished villa opened for bookings.</p>
+						<p>The villa is available to book all year round. Our dedicated management team is on hand 24 hours a day to help with any queries you have.</p>
+						<ul class="actions"><li><a href={`${base}rates/`}>Book now</a></li></ul>
+					</div>
+					<div class="right-container golden">
+						<h2>Quick links</h2>
+						<ul class="quick-links">
+							<li><a href="#villa-details">Villa overview</a></li>
+							<li><a href="#themed-kids-rooms">Themed kids bedrooms</a></li>
+							<li><a href="#pool-showcase">Pool deck</a></li>
+							<li><a href="#location-information">Local attractions</a></li>
+							<li><a href="#games-room">Games room</a></li>
+							<li><a href="#location">Location</a></li>
+						</ul>
+					</div>
+				</div></div>
+			</section>
+			<section id="villa-details" class="clearfix highlighted">
+				<div class="container"><div class="inner">
+					<div class="left-container golden boxed">
+						<h2>Villa details</h2>
+						<ul class="info-list">
+							<li><span class="attribute">Community</span><span class="result">Oak Island Cove</span></li>
+							<li><span class="attribute">Bedrooms</span><span class="result">6</span></li>
+							<li><span class="attribute">Bathrooms</span><span class="result">4</span></li>
+							<li><span class="attribute">Accommodates</span><span class="result">13</span></li>
+							<li><span class="attribute">King size beds</span><span class="result">3</span></li>
+							<li><span class="attribute">Queen size beds</span><span class="result">1</span></li>
+							<li><span class="attribute">Double beds</span><span class="result">1</span></li>
+							<li><span class="attribute">Single beds</span><span class="result">3</span></li>
+						</ul>
+					</div>
+					<div class="right-container golden boxed">
+						<h2>Amenities</h2>
+						<ul class="checklist ticks">
+							<li>Air conditioning</li><li>Free WiFi</li><li>Pool with safety net</li><li>Spa</li>
+							<li>Games room</li><li>TV with sports package</li><li>Blu-ray player</li><li>Safe</li>
+						</ul>
+						<ul class="checklist more-information ticks">
+							<li>Telephone</li><li>Shower</li><li>Bath</li><li>Towels</li><li>Kitchen</li>
+							<li>Washing machine</li><li>Tumble dryer</li><li>Microwave</li><li>Waste disposal</li>
+							<li>Ice maker</li><li>Iron and ironing board</li><li>USB charging sockets</li>
+						</ul>
+						<button class="more-info-toggle" type="button">See more</button>
+					</div>
+				</div></div>
+			</section>
+			<ThemedRooms />
+			<PoolArea />
+			<section id="games-room" class="clearfix highlighted indented right-indent">
+				<div class="container"><div class="inner clearfix"><div class="backing">
+					<div class="indent"><h2>Family games room</h2><p>The family games room is a great place to let your hair down and have some fun. The room includes a pool table, foosball table, air hockey table, and an electronic dartboard.</p></div>
+					<img src={`${base}images/villa/games-room.jpg`} alt="Family games room" />
+				</div></div></div>
+			</section>
+			<section id="location-information" class="clearfix highlighted indented left-indent">
+				<div class="container"><div class="inner clearfix"><div class="backing">
+					<div class="indent"><h2>Local Orlando attractions</h2><ul class="checklist">
+						<li>Orlando Disney Resort: 10-15 minutes</li><li>Orlando Universal Resort: 20 minutes</li><li>SeaWorld: 15 minutes</li><li>Old Town: 10 minutes</li>
+					</ul></div>
+					<img src={`${base}images/villa/disney.jpg`} alt="Close to Disney World, Orlando" />
+				</div></div></div>
+			</section>
+			<LocationSection />
+		</div>
+	</div>
+	<div class="lets-end clearfix"><ContactSection /><SiteFooter /></div>
+</Layout>

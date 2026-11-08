@@ -1,23 +1,67 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
-		<link rel="icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
+---
+	interface Props {
+		title: string;
+		description: string;
+		pageClass?: string;
+		noindex?: boolean;
 	}
-</style>
+
+	const { title, description, pageClass = '', noindex = false } = Astro.props;
+	const base = import.meta.env.BASE_URL;
+	const site = Astro.site ?? new URL(base, 'https://bloomingmagicalvillas.github.io');
+	const pageUrl = new URL(Astro.url.pathname, site).href;
+	const imageUrl = new URL(`${base}images/villa/front.jpg`, site).href;
+	---
+
+	<!doctype html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="description" content={description} />
+			<meta name="author" content="Blooming Magical Villas" />
+			<meta name="theme-color" content="#ffffff" />
+			<meta property="og:locale" content="en_GB" />
+			<meta property="og:type" content="website" />
+			<meta property="og:title" content={title} />
+			<meta property="og:description" content={description} />
+			<meta property="og:url" content={pageUrl} />
+			<meta property="og:image" content={imageUrl} />
+			<meta name="twitter:site" content="@bloomingvillas" />
+			<meta name="twitter:creator" content="@bloomingvillas" />
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:description" content={description} />
+			<meta name="twitter:image" content={imageUrl} />
+			{noindex && <meta name="robots" content="noindex, nofollow" />}
+			<link rel="apple-touch-icon" sizes="152x152" href={`${base}favicon/apple-touch-icon-152x152.png`} />
+			<link rel="icon" type="image/png" sizes="32x32" href={`${base}favicon/favicon-32x32.png`} />
+			<link rel="icon" type="image/png" sizes="16x16" href={`${base}favicon/favicon-16x16.png`} />
+			<link rel="icon" href={`${base}favicon.ico`} />
+			<link rel="preconnect" href="https://fonts.googleapis.com" />
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700%7CRaleway:400,400i,600,700" />
+			<link rel="stylesheet" href={`${base}css/reset.css`} />
+			<link rel="stylesheet" href={`${base}fonts/font-awesome/css/font-awesome.min.css`} />
+			<link rel="stylesheet" href={`${base}css/screen.css`} />
+			<link rel="stylesheet" href={`${base}css/medium.css`} media="screen and (min-width: 768px)" />
+			<link rel="stylesheet" href={`${base}css/large.css`} media="screen and (min-width: 1024px)" />
+			<link rel="stylesheet" href={`${base}css/x-large.css`} media="screen and (min-width: 1300px)" />
+			<link rel="stylesheet" href={`${base}css/lightcase.css`} />
+			<title>{title}</title>
+		</head>
+		<body class={pageClass}>
+			<slot />
+			<script is:inline src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+			<script is:inline src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+			<script is:inline src={`${base}js/scripts.js`}></script>
+			<script is:inline src={`${base}js/jquery.validate.min.js`}></script>
+			<script is:inline src={`${base}js/jquery.ui.datepicker.validation.min.js`}></script>
+			<script is:inline src={`${base}js/form-validation.js`}></script>
+			<script is:inline src={`${base}js/lightcase.js`}></script>
+			<script is:inline src={`${base}js/jquery.events.touch.js`}></script>
+			<script is:inline src={`${base}js/jquery.flexslider-min.js`}></script>
+			<script is:inline src={`${base}js/jquery.viewportchecker.js`}></script>
+			<script is:inline src={`${base}js/headroom.min.js`}></script>
+		</body>
+	</html>

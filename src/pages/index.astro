@@ -1,11 +1,99 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import ContactSection from '../components/ContactSection.astro';
+import LocationSection from '../components/LocationSection.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import SiteHeader from '../components/SiteHeader.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const base = import.meta.env.BASE_URL;
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+	title="Blooming Magical Villas | Luxury family Orlando accommodation"
+	description="A luxurious family villa in Kissimmee, Orlando. Six bedrooms, a private pool, themed kids rooms and space for up to 13 guests."
+	pageClass="front"
+>
+	<div id="lets-begin">
+		<SiteHeader />
+		<header id="page-introduction">
+			<div class="inner">
+				<div class="banner clearfix">
+					<div class="flex-container">
+						<ul class="actions"><li><a href={`${base}rooms/`}>Our rooms</a></li></ul>
+						<div class="flexslider">
+							<ul class="slides clearfix">
+								<li><a href={`${base}rooms/`}><img src={`${base}images/villa/front.jpg`} alt="Outside view of the villa" /></a></li>
+								<li><a href={`${base}rooms/#themed-kids-rooms`}><img src={`${base}images/villa/star-wars-room.jpg`} alt="Star Wars themed kids bedroom" /></a></li>
+								<li><a href={`${base}rooms/#themed-kids-rooms`}><img src={`${base}images/villa/frozen-bedroom.jpg`} alt="Frozen themed kids bedroom" /></a></li>
+								<li><a href={`${base}rooms/`}><img src={`${base}images/villa/queensize-bedroom-upstairs.jpg`} alt="Queen size bedroom upstairs" /></a></li>
+								<li><a href={`${base}rooms/`}><img src={`${base}images/villa/kingsize-bedroom-downstairs.jpg`} alt="King size bedroom downstairs" /></a></li>
+								<li><a href={`${base}rooms/#family-showcase`}><img src={`${base}images/villa/family-lounge.jpg`} alt="Family lounge area" /></a></li>
+								<li><a href={`${base}about/#pool-showcase`}><img src={`${base}images/villa/pool.jpg`} alt="Pool area and patio" /></a></li>
+								<li><a href={`${base}rooms/#kitchen-area`}><img src={`${base}images/villa/kitchen.jpg`} alt="Villa kitchen" /></a></li>
+								<li><a href={`${base}rooms/#family-showcase`}><img src={`${base}images/villa/games-room.jpg`} alt="Family games room" /></a></li>
+								<li><a href={`${base}rooms/#bathroom-showcase`}><img src={`${base}images/villa/bathroom-2.jpg`} alt="Downstairs master bedroom en suite" /></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="intro">
+						<div class="intro-inner">
+							<div class="intro-image"><img src={`${base}images/villa/image-2.jpg`} alt="Minions at Universal Studios, Orlando" /></div>
+							<div class="intro-text">
+								<h1>Orlando accommodation <br /><span>Perfect for the family</span></h1>
+								<p>Treat the whole family to luxury in our themed villa.</p>
+								<p><strong>Prices from £160 a night!</strong></p>
+								<ul class="actions"><li><a href={`${base}rates/`}>Our rates</a></li></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="page-body">
+		<div class="page-container">
+			<section id="about" class="clearfix highlighted">
+				<div class="container"><div class="inner">
+					<div class="left-container golden">
+						<h2>Blooming Magical Villas</h2>
+						<p><strong>Creating magical memories</strong></p>
+						<p>Our luxurious family villa is based in Kissimmee, Orlando. It boasts 6 bedrooms, 4 bathrooms and sleeps up to 13 people. The villa is newly refurbished and features a family room with a 60-inch TV, Blu-ray player and sports package, a games room, pool, spa and themed kids rooms based on the Star Wars and Frozen films.</p>
+						<p>The villa is only 10 minutes' drive from the Orlando Disney World Resort. It is also within walking distance of a new complex packed with award-winning bars and restaurants.</p>
+						<p>Our beautiful villa is perfect for large families and groups.</p>
+						<ul class="actions"><li><a href={`${base}about/`}>Find out more</a></li></ul>
+					</div>
+					<div class="right-container golden">
+						<h2>Key features</h2>
+						<ul class="checklist">
+							<li>6 bedrooms sleeping up to 13 people</li><li>Themed Frozen and Star Wars rooms</li>
+							<li>Fantastic location, 10 minutes from Disney</li><li>Nearby bars and restaurants</li>
+							<li>Private pool area</li><li>Newly refurbished</li><li>Family games room</li><li>Easy access to Interstate 4</li>
+						</ul>
+					</div>
+				</div></div>
+			</section>
+			<section id="reviews" class="clearfix highlighted alt-section">
+				<div class="container"><div class="inner clearfix">
+					<h2>Reviews and feedback</h2>
+					<div class="review">
+						<header><img class="reviewer-image" src={`${base}images/content/reviewers/josh.jpg`} alt="Josh from Ohio" /><h3>We absolutely loved it!</h3><div class="star-rating" aria-label="5 out of 5 stars"><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span></div></header>
+						<blockquote><hr /><p>We had nothing but a great experience at this house and with the owners! They responded quickly to any questions. The house was in great shape and very clean, and the beds were comfortable. It was also nice how close we were to Disney World. We will definitely come back and stay here again.</p><hr /><cite>Josh, Ohio, USA</cite><span>Airbnb</span></blockquote>
+					</div>
+					<div class="review middle">
+						<header><img class="reviewer-image" src={`${base}images/content/reviewers/karen.jpg`} alt="Karen from New Jersey" /><h3>I would recommend this home!</h3><div class="star-rating" aria-label="5 out of 5 stars"><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span></div></header>
+						<blockquote><hr /><p>We found it to be a great refuge after a long day of rides. The pool is lovely, the beds were comfortable, and we enjoyed hanging out with family in the evenings. The place was clean and nicely decorated, in a quiet neighbourhood close to stores and restaurants.</p><hr /><cite>Karen, New Jersey, USA</cite><span>Airbnb</span></blockquote>
+					</div>
+					<div class="review">
+						<header><img class="reviewer-image" src={`${base}images/content/reviewers/eggert.jpg`} alt="Eggert from Christchurch" /><h3>Cheers for the great experience!</h3><div class="star-rating" aria-label="5 out of 5 stars"><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span></div></header>
+						<blockquote><hr /><p>Great condition and very close to Disney. There is a great hub of restaurants nearby and an excellent supermarket. If you plan to enjoy the pool, ask for the pool heating to be turned on.</p><hr /><cite>Eggert, Christchurch, New Zealand</cite><span>Airbnb</span></blockquote>
+					</div>
+				</div></div>
+			</section>
+			<LocationSection />
+		</div>
+	</div>
+	<div class="lets-end clearfix">
+		<ContactSection />
+		<SiteFooter />
+	</div>
 </Layout>

@@ -1,0 +1,66 @@
+---
+import ContactSection from '../components/ContactSection.astro';
+import KitchenArea from '../components/KitchenArea.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import ThemedRooms from '../components/ThemedRooms.astro';
+import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
+const bedroomImages = [
+	{ src: 'kingsize-master-upstairs.jpg', alt: 'King size master bedroom with en suite upstairs', label: 'King size master bedroom, upstairs' },
+	{ src: 'kingsize-master-downstairs.jpg', alt: 'King size master bedroom with en suite and walk-in closet downstairs', label: 'King size master bedroom, downstairs' },
+	{ src: 'queensize-bedroom-upstairs.jpg', alt: 'Queen size bedroom with shared en suite', label: 'Queen size bedroom, upstairs' },
+	{ src: 'kingsize-bedroom-downstairs.jpg', alt: 'King size bedroom downstairs', label: 'King size bedroom, downstairs' },
+	{ src: 'frozen-bedroom.jpg', alt: 'Twin Frozen themed kids bedroom', label: 'Frozen themed kids bedroom' },
+	{ src: 'star-wars-room.jpg', alt: 'Star Wars themed kids bedroom sleeping up to three', label: 'Star Wars themed kids bedroom' },
+	{ src: 'master-bedroom-2.jpg', alt: 'Wall mounted HD TVs in every room', label: 'HD TVs in every room' },
+];
+const familyImages = [
+	{ src: 'family-lounge.jpg', alt: 'Family lounge with 60 inch HD TV and digital package', label: 'Family lounge' },
+	{ src: 'living-room.jpg', alt: 'Family living area overlooking pool deck', label: 'Family living area' },
+	{ src: 'dining-area.jpg', alt: 'Formal dining area', label: 'Dining area' },
+	{ src: 'games-room.jpg', alt: 'Games room with pool table, foosball, air hockey and darts', label: 'Games room' },
+	{ src: 'pool.jpg', alt: 'Pool area and spa', label: 'Pool area and patio' },
+];
+const additionalImages = [
+	{ src: 'bathroom-2.jpg', alt: 'En suite of downstairs master bedroom', label: 'Downstairs master en suite' },
+	{ src: 'bathroom-4.jpg', alt: 'En suite of upstairs queen size bedroom', label: 'Upstairs queen bedroom en suite' },
+	{ src: 'bathroom-3.jpg', alt: 'Shared upstairs en suite bathroom', label: 'Shared upstairs en suite' },
+	{ src: 'bathroom-1.jpg', alt: 'Downstairs shower room', label: 'Downstairs shower room' },
+	{ src: 'kitchen.jpg', alt: 'Refurbished kitchen with granite worktops and new appliances', label: 'Kitchen' },
+	{ src: 'utility-room.jpg', alt: 'Utility room with washing machine and dryer', label: 'Utility room' },
+	{ src: 'entrance.jpg', alt: 'Villa entrance and stairs', label: 'Villa entrance' },
+];
+---
+
+<Layout
+	title="Villa rooms | Blooming Magical Villas"
+	description="Explore the six bedrooms, family areas, kitchen and bathrooms at Blooming Magical Villas, a spacious Orlando villa for up to 13 guests."
+	pageClass="rooms-page"
+>
+	<div id="lets-begin"><div class="begin-container">
+		<SiteHeader />
+		<header id="page-header"><div class="page-header-container"><div class="inner"><div class="banner clearfix"><div class="banner-content">
+			<h1>Villa rooms</h1>
+			<p>This spacious, newly refurbished two-storey villa consists of 6 bedrooms, 4 bathrooms, open-plan living areas, a games room and a private patio and pool area.</p>
+		</div></div></div></div></header>
+	</div></div>
+	<div class="page-body"><div class="page-container">
+		<section id="bedroom-showcase" class="clearfix highlighted"><div class="container"><div class="inner"><div class="showcase-gallery clearfix">
+			<div class="text"><h2>Bedrooms</h2><p>All bedrooms have recently been refurbished. Four have en suite access, and every bedroom comes with an HD wall-mounted TV connected to a Comcast digital TV box.</p></div>
+			{bedroomImages.map((image) => <div><figure><a href={`${base}images/villa/${image.src}`} data-rel="lightcase:rooms"><img src={`${base}images/villa/${image.src}`} alt={image.alt} /><span>{image.label}</span></a></figure></div>)}
+		</div></div></div></section>
+		<ThemedRooms />
+		<section id="family-showcase" class="clearfix highlighted"><div class="container"><div class="inner"><div class="showcase-gallery clearfix">
+			<div class="text"><h2>Family areas</h2><p>The family lounge includes a 60-inch HD TV, Blu-ray system and full digital sports package. A separate living room overlooks the pool deck.</p></div>
+			{familyImages.map((image) => <div><figure><a href={`${base}images/villa/${image.src}`} data-rel="lightcase:rooms"><img src={`${base}images/villa/${image.src}`} alt={image.alt} /><span>{image.label}</span></a></figure></div>)}
+		</div></div></div></section>
+		<KitchenArea />
+		<section id="bathroom-showcase" class="clearfix highlighted"><div class="container"><div class="inner"><div class="showcase-gallery clearfix">
+			<div class="text"><h2>Additional rooms</h2><p>In addition to the rooms above, there are four bathrooms, a kitchen and a utility room to help make your stay comfortable. If you have any questions, please <a href="#contact">contact us</a>.</p></div>
+			{additionalImages.map((image) => <div><figure><a href={`${base}images/villa/${image.src}`} data-rel="lightcase:rooms"><img src={`${base}images/villa/${image.src}`} alt={image.alt} /><span>{image.label}</span></a></figure></div>)}
+		</div></div></div></section>
+	</div></div>
+	<div class="lets-end clearfix"><ContactSection /><SiteFooter /></div>
+</Layout>

@@ -1,0 +1,84 @@
+---
+import ContactSection from '../components/ContactSection.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
+const site = Astro.site ?? new URL(base, 'https://bloomingmagicalvillas.github.io');
+const nextUrl = new URL(`${base}quote-requested/`, site).href;
+---
+
+<Layout
+	title="Rates and bookings | Blooming Magical Villas"
+	description="View rates, extras, booking terms and request a quote for a stay at Blooming Magical Villas in Kissimmee, Orlando."
+	pageClass="rates-page"
+>
+	<div id="lets-begin"><div class="begin-container">
+		<SiteHeader />
+		<header id="page-header"><div class="page-header-container"><div class="inner"><div class="banner clearfix"><div class="banner-content">
+			<h1>Rates and bookings</h1>
+			<p>You'll find all of our rates and terms below. If you have any additional questions regarding the villa, please contact us and we'll be happy to help.</p>
+		</div></div></div></div></header>
+	</div></div>
+	<div class="page-body"><div class="page-container">
+		<section id="villa-rates" class="clearfix highlighted"><div class="container"><div class="inner">
+			<div class="left-container golden boxed">
+				<h2>Rates and terms</h2>
+				<ul class="info-list extras">
+					<li><span class="attribute">Price per night</span><span class="result">From £165</span></li>
+					<li><span class="attribute">Security deposit</span><span class="result">£200</span></li>
+					<li><span class="attribute">Cleaning fee</span><span class="result">£130</span></li>
+					<li><span class="attribute">Check-in</span><span class="result">After 4pm</span></li>
+					<li><span class="attribute">Check-out</span><span class="result">Before 10am</span></li>
+					<li><span class="attribute">Accommodates</span><span class="result">13</span></li>
+					<li><span class="attribute">Minimum stay</span><span class="result">4 nights</span></li>
+					<li><span class="attribute">Maximum stay</span><span class="result">90 nights</span></li>
+				</ul>
+				<div class="more-information"><h3>Extras</h3><ul class="info-list">
+					<li><span class="attribute">BBQ grill</span><span class="result">£70 per week</span></li>
+					<li><span class="attribute">Pool heating</span><span class="result">£105 per week</span></li>
+					<li><span class="attribute">Early check-in</span><span class="result">Free</span></li>
+					<li><span class="attribute">Late check-out</span><span class="result">Free</span></li>
+				</ul></div>
+				<button class="more-info-toggle" type="button">Extras</button>
+			</div>
+			<div id="request-quote" class="right-container golden boxed">
+				<h2>Request a quote from Blooming Magical Villas</h2>
+				<p>Let us know your requirements using the form below. We aim to respond to all enquiries within 48 hours.</p>
+				<p class="policies">Please read <a class="show-policies" href="#lets-begin">our policies</a> before continuing.</p>
+				<form action="https://formsubmit.co/info@bloomingvillas.com" method="POST" id="bookings" class="clearfix validate-form">
+					<input type="hidden" name="_subject" value="Blooming Magical Villas quote request" />
+					<input type="hidden" name="_template" value="table" />
+					<input type="hidden" name="_next" value={nextUrl} />
+					<div class="column"><label for="booking-name">Full name <span class="required">*</span></label><input type="text" id="booking-name" name="bookingName" required /></div>
+					<div class="column even"><label for="booking-email">Email address <span class="required">*</span></label><input type="email" id="booking-email" name="bookingEmail" required /></div>
+					<div class="column"><label for="check-in-date">Check-in date <span class="required">*</span></label><input type="text" id="check-in-date" class="datepicker" name="checkInDate" required /></div>
+					<div class="column even"><label for="check-out-date">Check-out date <span class="required">*</span></label><input type="text" id="check-out-date" class="datepicker" name="checkOutDate" required /></div>
+					<h4>Optional extras</h4>
+					<div class="optional-extras">
+						<div class="checkbox-container"><div class="checkbox-option"><input type="checkbox" value="Required" id="pool-heating" name="poolHeating" /><label for="pool-heating"></label></div><span>Pool heating</span></div>
+						<div class="checkbox-container"><div class="checkbox-option"><input type="checkbox" value="Required" id="bbq-grill" name="bbqGrill" /><label for="bbq-grill"></label></div><span>BBQ grill</span></div>
+						<div class="checkbox-container"><div class="checkbox-option"><input type="checkbox" value="Required" id="early-check-in" name="earlyCheckIn" /><label for="early-check-in"></label></div><span>Early check-in</span></div>
+						<div class="checkbox-container"><div class="checkbox-option"><input type="checkbox" value="Required" id="late-check-out" name="lateCheckOut" /><label for="late-check-out"></label></div><span>Late check-out</span></div>
+					</div>
+					<div class="form-honeypot" aria-hidden="true"><label for="quote-honey">Leave this field empty</label><input id="quote-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" /></div>
+					<input type="submit" value="Request quote" class="submit quote" />
+				</form>
+			</div>
+		</div></div></section>
+	</div></div>
+	<div class="lets-end clearfix"><ContactSection /><SiteFooter /></div>
+	<div id="policies" class="policies-container clearfix"><div class="inner">
+		<a class="close-policy-btn" href="#request-quote" aria-label="Close policies"><span class="fa fa-times" aria-hidden="true"></span></a>
+		<h3>Reservation Policy</h3>
+		<p>Check-in time: 4pm<br />Check-out time: 10am</p>
+		<p>An upfront £200 security deposit is required at the time of booking. The deposit is refundable and will be transferred back to you no later than two weeks after your stay. Full payment is due eight weeks before arrival. If you'd like to pay in instalments, please contact us before committing. Your quote is tailored to your requirements. Pool heating and BBQ grill hire are available at an additional cost. A one-time cleaning fee of £75 is included in your quote.</p>
+		<h3>Cancellation policy</h3>
+		<p>We have a moderate cancellation policy.</p>
+		<p>Cancellations made within 30 days of check-in incur a 75% loss of all monies paid. Your £200 deposit will be refunded.</p>
+		<p>Cancellations made 30-60 days before check-in incur a 50% loss of monies paid. Your £200 deposit will be refunded.</p>
+		<p>For cancellations 60 or more days before check-in, the £200 deposit and monies paid will be refunded.</p>
+		<p><a class="close-policy" href="#request-quote">Close policies</a></p>
+	</div></div>
+</Layout>

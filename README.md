@@ -1,46 +1,20 @@
-# Astro Starter Kit: Basics
+# Blooming Magical Villas
+
+Static Astro site for Blooming Magical Villas, migrated from the original PHP website. The pages and media are built into `dist/` and hosted on GitHub Pages.
+
+## Local development
 
 ```sh
-npm create astro@latest -- --template basics
+npm install
+npm run dev
+npm run build
+npm run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## GitHub Pages
 
-## 🚀 Project Structure
+The workflow in `.github/workflows/deploy.yml` builds and deploys on pushes to `main`. It derives the Astro base path from the GitHub repository name, so project-page asset and route URLs work without a hard-coded owner. The Pages source must be set to **GitHub Actions** in repository settings.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Forms
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+The contact and quote forms use FormSubmit because GitHub Pages does not run PHP. On the first real submission, FormSubmit sends an activation email to `info@bloomingvillas.com`; activate the address to enable delivery. Form submissions are handled by FormSubmit, and successful submissions redirect to the site's static confirmation pages.

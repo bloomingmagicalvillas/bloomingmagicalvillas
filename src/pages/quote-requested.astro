@@ -1,0 +1,18 @@
+---
+import SiteFooter from '../components/SiteFooter.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout title="Quote requested | Blooming Magical Villas" description="Thanks for requesting a quote from Blooming Magical Villas." pageClass="thankyou" noindex>
+	<main>
+		<div id="lets-begin"><SiteHeader /></div>
+		<div class="page-body"><section class="clearfix highlighted"><div class="container"><div class="inner">
+			<h1>Thank you for requesting a quote</h1><p>We'll be in touch shortly.</p>
+			<ul class="actions"><li><a href={base}>Home</a></li></ul>
+		</div></div></section></div>
+		<div class="lets-end clearfix"><SiteFooter /></div>
+	</main>
+</Layout>

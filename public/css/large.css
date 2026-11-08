@@ -1,0 +1,585 @@
+/* Fonts */
+/* Colors */
+/* Brand colors */
+/* Body color */
+/* Text color */
+/* Header colors */
+/* Background overlay colors */
+/* Banners */
+/* Action colors */
+/* Interaction colors */
+/* Footer colors */
+/* Grey colors */
+/* Backgrounds */
+/* CSS full backgrounds */
+/* line 3, ../sass/large.scss */
+.top-bar {
+  display: block;
+  font-size: 16px;
+  font-size: 1.6rem;
+  background: #27ade2;
+  padding: 12px 0;
+  position: absolute;
+  width: 100%;
+  -webkit-box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.03);
+  z-index: 10;
+}
+/* line 14, ../sass/large.scss */
+.top-bar a {
+  color: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+/* line 18, ../sass/large.scss */
+.top-bar .slogan, .top-bar .email-contact {
+  display: inline-block;
+  margin-right: -4px;
+  width: 50%;
+}
+/* line 23, ../sass/large.scss */
+.top-bar .email-contact {
+  text-align: right;
+}
+
+/* Header navigation */
+/* line 29, ../sass/large.scss */
+#header-navigation {
+  padding-top: 101px;
+  padding-bottom: 45px;
+}
+/* line 32, ../sass/large.scss */
+#header-navigation .social-header, #header-navigation .action-header {
+  width: 16%;
+}
+/* line 35, ../sass/large.scss */
+#header-navigation .inner {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+/* line 39, ../sass/large.scss */
+#header-navigation .logo-header {
+  display: none;
+}
+/* line 42, ../sass/large.scss */
+#header-navigation .social-header {
+  display: inline-block;
+  text-align: left;
+}
+/* line 46, ../sass/large.scss */
+#header-navigation .primary-navigation-header {
+  display: inline-block !important;
+  width: 68%;
+  height: auto;
+  position: static;
+  background: none;
+  padding: 0;
+}
+/* line 53, ../sass/large.scss */
+#header-navigation .primary-navigation-header .primary-navigation-inner {
+  padding-top: 0;
+  background: transparent;
+}
+/* line 57, ../sass/large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation {
+  padding: 0;
+}
+/* line 59, ../sass/large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 63, ../sass/large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 67, ../sass/large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation ul li:first-of-type a {
+  margin-left: 0;
+}
+/* line 72, ../sass/large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation ul li:last-of-type a {
+  margin-left: 0;
+}
+/* line 76, ../sass/large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation ul li.logo {
+  display: inline-block;
+  margin: 0 10px 0 30px;
+}
+/* line 80, ../sass/large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation ul li.book {
+  display: none;
+}
+/* line 83, ../sass/large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation ul li a {
+  font-size: 16px;
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0 0 0 20px;
+  transition: color 0.5s ease;
+  letter-spacing: 1px;
+}
+/* line 89, ../sass/large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation ul li a:hover {
+  color: #FFFFFF;
+}
+/* line 95, ../sass/large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation a.header-logo {
+  display: none;
+  width: 150px;
+}
+/* line 98, ../sass/large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation a.header-logo img {
+  display: block;
+}
+/* line 101, ../sass/large.scss */
+#header-navigation .primary-navigation-header nav#primary-navigation a.header-logo.navigation {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+/* line 109, ../sass/large.scss */
+#header-navigation .toggle-header {
+  display: none;
+}
+/* line 112, ../sass/large.scss */
+#header-navigation #close-navigation {
+  display: none;
+}
+/* line 115, ../sass/large.scss */
+#header-navigation .action-header {
+  position: static;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+}
+/* line 121, ../sass/large.scss */
+#header-navigation .action-header a {
+  display: inline-block;
+  transition: ease background-color 0.5s;
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: 2px solid;
+  border-color: #27ade2;
+  color: #27ade2;
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 10px 20px;
+  width: auto;
+}
+/* line 132, ../sass/large.scss */
+#header-navigation .action-header a:hover {
+  background: #27ade2;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+/* Page banner links */
+/* line 143, ../sass/large.scss */
+.banner ul.actions {
+  right: 10px;
+}
+/* line 146, ../sass/large.scss */
+.banner ul.actions li a {
+  background: #FFFFFF;
+  border: 2px solid;
+  border-bottom: none;
+  border-color: #FFFFFF;
+  color: #27ade2;
+  border-radius: 4px 4px 0 0;
+}
+/* line 153, ../sass/large.scss */
+.banner ul.actions li a:hover {
+  background: #27ade2;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+/* line 164, ../sass/large.scss */
+#page-header .banner {
+  border-top: 3px solid #FFFFFF;
+  border-bottom: 3px solid #FFFFFF;
+}
+/* line 167, ../sass/large.scss */
+#page-header .banner .banner-content {
+  float: right;
+  width: 36%;
+  padding: 140px 47px;
+}
+
+/* Page introduction */
+/* line 177, ../sass/large.scss */
+#page-introduction .banner {
+  border-top: 3px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+/* line 181, ../sass/large.scss */
+#page-introduction .banner .flex-container {
+  border-bottom: none;
+}
+/* line 184, ../sass/large.scss */
+#page-introduction .banner h1 {
+  font-size: 26px;
+  font-size: 2.6rem;
+  margin-bottom: 25px;
+}
+/* line 187, ../sass/large.scss */
+#page-introduction .banner h1 span {
+  font-size: 20px;
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 193, ../sass/large.scss */
+#page-introduction .banner p {
+  font-size: 19px;
+  font-size: 1.9rem;
+  line-height: 1.5em;
+  margin-bottom: 25px;
+}
+/* line 198, ../sass/large.scss */
+#page-introduction .banner .flex-container {
+  position: relative;
+  width: 50%;
+  border-right: 3px solid #FFFFFF;
+}
+/* line 204, ../sass/large.scss */
+#page-introduction .banner .flex-container ul.actions li a {
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+  color: #27ade2;
+}
+/* line 208, ../sass/large.scss */
+#page-introduction .banner .flex-container ul.actions li a:hover {
+  background: #27ade2;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+/* line 217, ../sass/large.scss */
+#page-introduction .banner .intro {
+  width: 50%;
+  background: none;
+}
+/* line 221, ../sass/large.scss */
+#page-introduction .banner .intro-inner {
+  background: none;
+  padding: 0 50px;
+}
+
+/* Action links */
+/* line 229, ../sass/large.scss */
+ul.actions {
+  margin-top: 28px;
+}
+/* line 232, ../sass/large.scss */
+ul.actions li a {
+  transition: ease background-color 0.5s;
+}
+/* line 234, ../sass/large.scss */
+ul.actions li a:hover {
+  background: #FFFFFF;
+  color: #27ade2;
+}
+
+/*Showcase gallery */
+/* line 245, ../sass/large.scss */
+.showcase-gallery div.text {
+  padding-right: 70px;
+}
+/* line 247, ../sass/large.scss */
+.showcase-gallery div.text a {
+  transition: ease background-color 0.5s;
+}
+/* line 249, ../sass/large.scss */
+.showcase-gallery div.text a:hover {
+  transform: none;
+}
+/* line 255, ../sass/large.scss */
+.showcase-gallery div a img {
+  transition: all .5s ease-in-out;
+}
+/* line 259, ../sass/large.scss */
+.showcase-gallery div a:hover img {
+  opacity: .80;
+}
+/* line 264, ../sass/large.scss */
+.showcase-gallery div span {
+  padding: 14px;
+}
+
+/* Containers */
+/* line 272, ../sass/large.scss */
+.highlighted .left-container, .highlighted .right-container {
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+  width: 46%;
+}
+/* line 279, ../sass/large.scss */
+.highlighted .left-container.golden {
+  width: 59.9%;
+}
+/* line 282, ../sass/large.scss */
+.highlighted .left-container.golden.boxed {
+  width: 34%;
+}
+/* line 286, ../sass/large.scss */
+.highlighted .right-container {
+  margin-top: 0;
+  margin-left: 8%;
+}
+/* line 291, ../sass/large.scss */
+.highlighted .right-container.golden {
+  width: 32.1%;
+}
+/* line 294, ../sass/large.scss */
+.highlighted .right-container.golden.boxed {
+  width: 61%;
+  margin-left: 5%;
+}
+/* line 300, ../sass/large.scss */
+.highlighted.middle-aligned .left-container, .highlighted.middle-aligned .right-container {
+  vertical-align: middle;
+}
+
+/* Indented */
+/* line 308, ../sass/large.scss */
+.indented .inner {
+  padding-right: 65px;
+  padding-left: 65px;
+}
+/* line 313, ../sass/large.scss */
+.indented .backing .indent {
+  padding: 70px;
+}
+/* line 318, ../sass/large.scss */
+.indented.right-indent .indent, .indented.left-indent .indent {
+  border-radius: 4px;
+}
+/* line 322, ../sass/large.scss */
+.indented.right-indent .backing img, .indented.left-indent .backing img {
+  border-radius: 4px;
+}
+
+/* Three column container */
+/* line 331, ../sass/large.scss */
+.three-column h3 {
+  margin: 0;
+}
+/* line 334, ../sass/large.scss */
+.three-column .three-col {
+  margin-bottom: 0;
+  float: left;
+  width: 30%;
+  margin-bottom: 0;
+}
+/* line 339, ../sass/large.scss */
+.three-column .three-col.middle {
+  margin: 0 5%;
+}
+
+/* line 346, ../sass/large.scss */
+#reviews h2 {
+  margin-bottom: 85px;
+}
+/* line 349, ../sass/large.scss */
+#reviews .review {
+  float: left;
+  width: 30%;
+  margin-top: 40px;
+  margin-bottom: 0;
+  min-height: 630px;
+}
+/* line 355, ../sass/large.scss */
+#reviews .review.middle {
+  margin: 0 5%;
+}
+
+/* Contact */
+/* line 362, ../sass/large.scss */
+#contact {
+  margin-bottom: 0;
+  text-align: center;
+}
+/* line 365, ../sass/large.scss */
+#contact .inner {
+  max-width: 950px;
+}
+/* line 368, ../sass/large.scss */
+#contact .contact-message {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 373, ../sass/large.scss */
+#contact h2 {
+  text-align: center;
+}
+/* line 376, ../sass/large.scss */
+#contact #contact-form {
+  margin-top: 60px;
+}
+/* line 378, ../sass/large.scss */
+#contact #contact-form textarea {
+  height: 180px;
+  resize: none;
+}
+/* line 383, ../sass/large.scss */
+#contact #contact-form .form-row-1 .column {
+  width: 31.66%;
+  float: left;
+  margin-left: 2.5%;
+  margin-bottom: 2.5%;
+}
+/* line 388, ../sass/large.scss */
+#contact #contact-form .form-row-1 .column input {
+  margin-bottom: 0;
+}
+/* line 391, ../sass/large.scss */
+#contact #contact-form .form-row-1 .column:first-of-type {
+  margin-left: 0;
+}
+/* line 397, ../sass/large.scss */
+#contact #contact-form input.submit {
+  float: right;
+  margin-top: 20px;
+}
+/* line 402, ../sass/large.scss */
+#contact #contact-form label {
+  text-align: left;
+}
+
+/* line 409, ../sass/large.scss */
+.alt-section.highlighted {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* line 412, ../sass/large.scss */
+.alt-section.highlighted .container {
+  padding-top: 85px;
+  padding-bottom: 100px;
+}
+
+/* More info toggle */
+/* line 420, ../sass/large.scss */
+.more-information {
+  display: block;
+}
+
+/* line 423, ../sass/large.scss */
+.more-info-toggle {
+  display: none;
+}
+
+/* Page end */
+/* Footer */
+/* line 430, ../sass/large.scss */
+footer {
+  padding: 35px 0 50px;
+}
+/* line 432, ../sass/large.scss */
+footer #company-details, footer #contact-footer, footer #social-footer {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+}
+/* line 437, ../sass/large.scss */
+footer #company-details ul, footer #contact-footer ul, footer #social-footer ul {
+  margin-bottom: 0;
+}
+/* line 441, ../sass/large.scss */
+footer #contact-footer {
+  width: 40%;
+  padding: 0 7%;
+}
+
+/* line 448, ../sass/large.scss */
+.rates-page footer {
+  padding: 35px 0 50px;
+}
+/* line 452, ../sass/large.scss */
+.rates-page #header-navigation .action-header {
+  display: inline-block;
+}
+
+/* Headings */
+/* line 458, ../sass/large.scss */
+h1 {
+  font-size: 27px;
+  font-size: 2.7rem;
+  line-height: 1.3em;
+  margin-bottom: 18px;
+}
+
+/* line 463, ../sass/large.scss */
+h2 {
+  font-size: 27px;
+  font-size: 2.7rem;
+  line-height: 1.3em;
+  margin-bottom: 18px;
+}
+
+/* line 468, ../sass/large.scss */
+h3 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 1.3em;
+  margin-bottom: 18px;
+}
+
+/* Additional */
+/* Forms */
+/* line 478, ../sass/large.scss */
+input.submit, textarea.submit {
+  transition: ease background-color 0.5s;
+}
+/* line 480, ../sass/large.scss */
+input.submit:hover, textarea.submit:hover {
+  background: #FFFFFF;
+  color: #27ade2;
+}
+
+/* Info list */
+/* line 490, ../sass/large.scss */
+ul.info-list li:last-of-type {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* Highlighted sections */
+/* line 500, ../sass/large.scss */
+.highlighted:first-of-type .container {
+  padding-top: 70px;
+}
+/* line 504, ../sass/large.scss */
+.highlighted .container {
+  padding: 50px 0 50px;
+}
+
+/* Inner */
+/* line 510, ../sass/large.scss */
+.inner {
+  padding-right: 70px;
+  padding-left: 70px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Headroom */
+/* line 519, ../sass/large.scss */
+#header-navigation .action-header {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+/* line 523, ../sass/large.scss */
+#header-navigation .action-header.slideUp {
+  visibility: inherit;
+  opacity: inherit;
+  transition: inherit;
+}
